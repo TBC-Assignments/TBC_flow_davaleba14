@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="20dp"
+    app:cardBackgroundColor="@color/dark_blue_grey"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="74dp"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:background="@drawable/background_update_button"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="40dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDelete"
+        android:layout_width="74dp"
+        android:text="@string/delete"
+        android:background="@drawable/background_delete_button"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="10dp"
+        android:layout_height="40dp" />
+
+</androidx.cardview.widget.CardView>
